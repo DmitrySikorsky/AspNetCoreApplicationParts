@@ -17,8 +17,8 @@ namespace AspNetCoreApplicationParts
   {
     public void ConfigureServices(IServiceCollection services)
     {
-      PortableExecutableReference reference = MetadataReference.CreateFromFile(@"C:\Users\Dmitry Sikorsky\Documents\Projects\Web\AspNetCoreApplicationParts\src\AspNetCoreApplicationParts.ModuleA\bin\Debug\netstandard1.5\AspNetCoreApplicationParts.ModuleA.dll");
-      Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(@"C:\Users\Dmitry Sikorsky\Documents\Projects\Web\AspNetCoreApplicationParts\src\AspNetCoreApplicationParts.ModuleA\bin\Debug\netstandard1.5\AspNetCoreApplicationParts.ModuleA.dll");
+      PortableExecutableReference reference = MetadataReference.CreateFromFile(@"C:\{PathToTheProject}\AspNetCoreApplicationParts\src\AspNetCoreApplicationParts.ModuleA\bin\Debug\netstandard1.5\AspNetCoreApplicationParts.ModuleA.dll");
+      Assembly assembly = AssemblyLoadContext.Default.LoadFromAssemblyPath(@"C:\{PathToTheProject}\AspNetCoreApplicationParts\src\AspNetCoreApplicationParts.ModuleA\bin\Debug\netstandard1.5\AspNetCoreApplicationParts.ModuleA.dll");
 
       services.AddMvc().AddApplicationPart(assembly).AddRazorOptions(
         o =>
