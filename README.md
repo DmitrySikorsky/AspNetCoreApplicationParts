@@ -1,2 +1,3 @@
 # AspNetCoreApplicationParts
-Sample ASP.NET Core application with application parts
+
+Sample ASP.NET Core application with application parts.
